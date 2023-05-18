@@ -1,0 +1,20 @@
+<Html>    
+    <Head>  
+    <title>  
+    
+    </title>  
+    </Head>  
+    <Body>
+        {% if selamlama %}
+        <h1>{{selamlama}}</h1>
+        {% else %}
+        <h1>MERHABA</h1>
+        {% endif %}
+   {{kullanici.kullaniciadi}}
+   {% for veri in veriler %}
+   <h2>{{veri.adi}}</h2><br>
+   <h2>{{veri.soyadi}}</h2><br>
+   {% endfor %}
+
+    </Body>  
+    </Html>      
